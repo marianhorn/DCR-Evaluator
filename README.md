@@ -146,11 +146,11 @@ If you use this code in your research, please cite:
   title={Tabular Deep Concept Reasoning},
   author={Horn, Marian},
   year={2025},
-  school={Universit{\`a} della Svizzera italiana},
+  school={Universita della Svizzera italiana},
   type={Master's thesis}
 }
 ```
 
 ## Contact
 
-For questions or collaborations, please contact: [Contact Information]
+For questions or collaborations, please contact: marian.horn@usi.ch
