@@ -1,0 +1,52 @@
+# Model configuration for DCR evaluation framework
+
+dcr:
+  learning_rate: [0.001, 0.01, 0.1]
+  epochs: [100, 200, 300]
+  tau: [0.1, 0.3, 0.5]  # Complexity parameter for rule generation
+  concept_embedding_size: [10, 20, 50]
+  num_concepts: [5, 10, 15, 20]
+  concept_loss_weight: [0.1, 0.5, 1.0]
+  
+random_forest:
+  n_estimators: [100, 200, 500]
+  max_depth: [10, 20, null]
+  min_samples_split: [2, 5, 10]
+  min_samples_leaf: [1, 2, 4]
+  max_features: ["sqrt", "log2", null]
+  
+xgboost:
+  n_estimators: [100, 200, 500]
+  max_depth: [3, 6, 10]
+  learning_rate: [0.01, 0.1, 0.2]
+  subsample: [0.8, 0.9, 1.0]
+  colsample_bytree: [0.8, 0.9, 1.0]
+  
+catboost:
+  iterations: [100, 200, 500]
+  depth: [4, 6, 8]
+  learning_rate: [0.01, 0.1, 0.2]
+  l2_leaf_reg: [1, 3, 5]
+  
+node:
+  num_layers: [2, 4, 6]
+  total_tree_count: [1024, 2048]
+  tree_depth: [6, 8]
+  tree_output_dim: [1, 2]
+  
+tabnet:
+  n_d: [8, 16, 32]
+  n_a: [8, 16, 32]
+  n_steps: [3, 5, 7]
+  gamma: [1.3, 1.5, 2.0]
+  
+logistic_regression:
+  C: [0.1, 1.0, 10.0]
+  penalty: ["l1", "l2"]
+  solver: ["liblinear", "saga"]
+  
+decision_tree:
+  max_depth: [5, 10, 20, null]
+  min_samples_split: [2, 5, 10]
+  min_samples_leaf: [1, 2, 4]
+  criterion: ["gini", "entropy"]
